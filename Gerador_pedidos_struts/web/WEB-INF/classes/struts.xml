@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="geradorpedidos" extends="struts-default">
+             <!--Cliente -->
+		<action name="listarClientes" class="geradorpedidos.action.ActionListarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+		<action name="editaCliente" class="geradorpedidos.action.ActionFormEditarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/adicionarClientes.jsp</result>
+		</action>
+		<action name="criaEditaCliente" class="geradorpedidos.action.ActionCriarEditarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+		<action name="removeCliente" class="geradorpedidos.action.ActionRemoverCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+                
+                <!--Item-->
+                <action name="listarItens" class="geradorpedidos.action.ActionListarItem"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarItens.jsp</result>
+		</action>
+		<action name="editaItem" class="geradorpedidos.action.ActionFormEditarItem"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/adicionarItens.jsp</result>
+		</action>
+		<action name="criaEditaItem" class="geradorpedidos.action.ActionCriarEditarItem"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarItens.jsp</result>
+		</action>
+		<action name="removeItem" class="geradorpedidos.action.ActionRemoverItem"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarItens.jsp</result>
+		</action>
+                
+                <!--Pedido
+                <action name="listarClientes" class="geradorpedidos.action.ActionListarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+		<action name="editaCliente" class="geradorpedidos.action.ActionFormEditarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/adicionarClientes.jsp</result>
+		</action>
+		<action name="criaEditaCliente" class="geradorpedidos.action.ActionCriarEditarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+		<action name="removeCliente" class="geradorpedidos.action.ActionRemoverCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+                
+                Produto
+                <action name="listarClientes" class="geradorpedidos.action.ActionListarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+		<action name="editaCliente" class="geradorpedidos.action.ActionFormEditarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/adicionarClientes.jsp</result>
+		</action>
+		<action name="criaEditaCliente" class="geradorpedidos.action.ActionCriarEditarCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action>
+		<action name="removeCliente" class="geradorpedidos.action.ActionRemoverCliente"
+			method="execute">
+			<result name="success">/WEB-INF/jsp/listarClientes.jsp</result>
+		</action> -->
+                
+                
+               
+               
+	</package>
+</struts>
